@@ -1,0 +1,17 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %} Coffee and Wifi {% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="static/css/styles.css">
+<div class="jumbotron text-center">
+    <div class="container">
+  <h1 class="display-4">☕️ Coffee & Wifi 💻</h1>
+  <p class="lead">Want to work in a cafe but need strong wifi?</p>
+  <hr class="my-4">
+  <p>You've found the right place!</p>
+  <a class="btn btn-warning btn-lg" href="{{url_for('all_cafes')}}" role="button">Show Me!</a>
+</div>
+    </div>
+
+{% endblock %}
